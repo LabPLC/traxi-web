@@ -11,19 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group col-xs-12 floating-label-form-group">
     <%= f.label :nombre %><br>
-    <%= f.text_field :nombre %>
+    <%= f.text_field( :nombre, class: "form-control") %>
   </div>
-  <div class="field">
+  <div class="field form-group col-xs-12 floating-label-form-group">
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.text_field( :email, class: "form-control") %>
   </div>
-  <div class="field">
+  <div class="field form-group col-xs-12 floating-label-form-group">
     <%= f.label :comentario %><br>
-    <%= f.text_area :comentario %>
+    <%= f.text_area( :comentario, class: "form-control") %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-lg btn-success" %>
   </div>
 <% end %>
