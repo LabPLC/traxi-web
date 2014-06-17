@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-default navbar-fixed-top">
 
         <div class="container">
@@ -53,6 +55,36 @@
             </div>
         </div>
     </header>
+
+    <% if flash[:toastr] %>
+  <script type="text/javascript">
+    <% flash[:toastr].each do |type, message| %>
+      toastr.options = {
+      "closeButton": false,
+      "debug": false,
+      "positionClass": "toast-top-full-width",
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "10000",
+      "timeOut": "100000",
+      "extendedTimeOut": "10000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+      }
+      toastr.#{type}('#{raw(message)}')
+    <% end %>
+  </script>
+<% else %>
+  <% flash.each do |key, value| %>
+    <%- a = flash_class(key) %>
+    <div class="notice">
+      <%= value unless key == :new_badge %>
+    </div>
+  <% end %>
+<% end %>
+
 
     <section class="success" id="about">
         <div class="container">

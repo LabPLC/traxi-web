@@ -1,3 +1,12 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.notice {
+  font-size: 3em;
+color: black;
+background-color: blue;
+height: 100px;
+border-radius: 50px;
+text-align: center;
+padding: 60px;
+}
