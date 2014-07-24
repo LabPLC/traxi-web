@@ -1,5 +1,8 @@
 == README
 
+{<img src="https://travis-ci.org/lfalvarez/traxi-web.svg?branch=travis_testing" alt="Build Status" />}[https://travis-ci.org/lfalvarez/traxi-web]
+{<img src="https://coveralls.io/repos/lfalvarez/traxi-web/badge.png" alt="Coverage Status" />}[https://coveralls.io/r/lfalvarez/traxi-web] 
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
