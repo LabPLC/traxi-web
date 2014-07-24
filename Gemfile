@@ -12,7 +12,6 @@ group :development, :test do
   gem 'guard-spork'
   gem 'childprocess'
   gem 'annotate'
-  gem 'pry'
 end
 
 group :test do
